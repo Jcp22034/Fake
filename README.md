@@ -10,7 +10,7 @@ Install:
 
 pip install -r requirements.txt
 
-python Fake.py
+python main.py
 
 Usage:
 ------
@@ -26,3 +26,17 @@ Info:
 -----
 
 I am planning on updating Fake, and have a few ideas in mind for other users to be abke to use this to their own advantage!
+
+Current version: 1.3.7
+----------------------
+
+Features:
+---------
+
+Send a fake token logging embed to a specified webhook
+
+Attach a bait image as base for how the target was "logged"
+
+Hide all generated info, so only legitimate information is seen
+
+Set the nitro status of the target

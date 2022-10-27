@@ -8,7 +8,7 @@ Info:
 
 Fake is a discord self-bot that is designed for you to scare your friends!
 
-I am planning on updating Fake, and have a few ideas in mind for other users to be abke to use this to their own advantage!
+I am planning on updating Fake, and have a few ideas in mind for other users to be able to use this to their own advantage!
 
 Current version: 1.3.7
 ----------------------
@@ -18,7 +18,7 @@ Features:
 
 Send a fake token logging embed to a specified webhook
 
-Attach a bait image as base for how the target was "logged"
+Attach a bait image for how the target was "logged"
 
 Hide all generated info, so only legitimate information is seen
 

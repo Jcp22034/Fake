@@ -67,7 +67,7 @@ def fakingtoken():
     #get first part of token
     global id1
     id1 = input("\n\nEnter target's ID: ")
-    if len(id1) != 18 and len(id1) != 19:
+    if len(id1) < 10 and id1.isdigit():
         fakingtokenfailed()
     else:
         if id1.isdigit():

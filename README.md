@@ -45,5 +45,7 @@ Contact:
 ------
 
 Come join cheataway, you can contact me from there, for suggestions for the program and more! [Link:](https://cheataway.com/invite)
+
 My discord: try6lol#1288
+
 Message for info, tips and more!

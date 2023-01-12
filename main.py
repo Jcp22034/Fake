@@ -1,14 +1,6 @@
-import requests
-import discord
+import requests,discord,aiohttp,base64,random,os,datetime,json,httpx
 from discord.ext import commands
 from discord import Webhook, AsyncWebhookAdapter
-import aiohttp
-import base64
-import random
-import os
-import datetime
-import json
-import httpx
 
 def startingtitlecard():
     titlecard()
@@ -67,7 +59,7 @@ def fakingtoken():
     #get first part of token
     global id1
     id1 = input("\n\nEnter target's ID: ")
-    if len(id1) < 10 and id1.isdigit():
+    if len(id1) > 10 and not id1.isdigit():
         fakingtokenfailed()
     else:
         if id1.isdigit():
@@ -220,6 +212,8 @@ def getinfo():
     global totaltoken
     global webhooktmp
     global hideinfo
+    titlecard()
+    print("\n\nConnecting to discord...")
     fakelogo = "https://thumbs.dreamstime.com/z/f-letter-white-monogram-logo-web-ui-icon-dark-background-contour-option-127110106.jpg"
     #thanks timmywag#4066 for this
     random_ip = str(random.randrange(1,255))+"."+str(random.randrange(1,255))+"."+str(random.randrange(1,255))+"."+str(random.randrange(1,255))
@@ -233,6 +227,7 @@ def getinfo():
     client = commands.Bot(command_prefix="Bot",self_bot=True,guild_subscriptions=False)
     @client.event
     async def on_ready():
+        print("Connected to Discord!")
         username = await client.fetch_user(id1)
         if username:
             titlecard()
@@ -430,7 +425,7 @@ def getheaders(token=None):
 global fakever
 global fakedes
 
-fakever = "1.3.7"
-fakedes = "Removed discord.py + QOL improvements + Bait image + Hide info"
+fakever = "1.3.7.6"
+fakedes = "Fixed script to work with new discord ID lengths (Finally)"
 
 startingtitlecard()
